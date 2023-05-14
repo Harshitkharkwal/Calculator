@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator@Harshit</title>
+    <script src="https://kit.fontawesome.com/88fb880ea5.js" crossorigin="anonymous"></script>
+  
+    <style>
+        #des{
+            position: absolute;
+            top: 70%;
+            left: 15%;
+            background-color: greenyellow;
+        }
+        #des:hover{
+            background-color: orange;
+            border-color: orange;
+        }
+        
+        .container{
+            border: 2px solid greenyellow;
+            border-radius: 5px;
+            display:inline-block;
+            padding: 20px 10px;
+            background-color:darkgray;
+            position: absolute;
+            top: 20%;
+            left: 15%;
+        }
+        #e{
+            background-color: greenyellow;
+        }
+        #e:hover{
+            cursor: pointer;
+        }
+        #main{
+            margin: 5px 1px;
+            width:225px;
+            border: 2px solid greenyellow;
+            border-radius: 5px;
+            height: 50px;
+            padding: 0px;
+            outline: none;
+            background-color: white;
+        
+            
+        }
+        button{
+            width: 50px;
+            border: 2px solid greenyellow;
+            margin: 3px;
+            border-radius: 5px;
+        }
+        h1{ position: absolute;
+            top: 10%;
+            left: 10%;
+            font-family:monospace;
+            font-size:large;
+            color: azure;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color:darkgrey;
+        }
+        body{
+            background-color: black;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Hey! My name is Calc and I provide solution to you...</h1>
+    <img src="icon.jpg" alt="">
+    <div class="container">
+    <input type="text"  disabled id="main">
+    <section>
+        <button id="ac">AC</button>
+        <button id="backspace">Del</button>
+        <button  id="square">x<sup>1/2</sup></button>
+        <button  id="/">/</button>
+    </section>
+    <section>
+        <button  id="7">7</button>
+        <button  id="8">8</button>
+        <button  id="9">9</button>
+        <button  id="X">X</button>
+
+    </section>
+    <section>
+        <button  id="4">4</button>
+        <button  id="5">5</button>
+        <button id="6">6</button>
+        <button  id="-">-</button>
+
+    </section>
+    <section>
+        <button  id="1">1</button>
+        <button  id="2">2</button>
+        <button  id="3">3</button>
+        <button  id="+">+</button>
+    </section>
+    <section>
+        <button  id="00">1/x</button>
+        <button  id="0">0</button>
+        <button  id=".">.</button>
+        <button  id="e">=</button>
+    </section>
+</div>
+<button id="des">Info</button>
+<script src="script.js"></script>    
+</body>
+</html>
